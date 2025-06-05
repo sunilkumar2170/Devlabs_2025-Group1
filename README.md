@@ -13,7 +13,7 @@ Click the `Fork` button in the top-right corner of this page to create a copy un
 
 ### 2. Clone the Forked Repository
 ```bash
-git clone https://github.com/Slok9931/Devlabs_2025-Group1.git
+git clone https://github.com/username/Devlabs_2025-Group1.git
 cd DevLabs-Summer-Bootcamp
 ```
 
