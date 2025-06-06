@@ -1,0 +1,75 @@
+ body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #83a4d4, #b6fbff);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: all 0.4s ease;
+    }
+
+    .container, .timer {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      margin: 20px;
+      width: 300px;
+      transition: all 0.3s ease;
+    }
+
+    #count, #timerDisplay {
+      font-size: 4rem;
+      margin-bottom: 30px;
+      color: #000000;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    #modeToggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    #modeIcon {
+      width: 30px;
+    }
+
+    .dark-mode {
+      background: #1e1e1e;
+    }
+
+    .dark-mode .container,
+    .dark-mode .timer {
+      background: #2c2c2c;
+    }
+
+    .dark-mode #count,
+    .dark-mode #timerDisplay {
+      color: white;
+    }
