@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive 2x2 Box Grid</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Archivo', sans-serif;
+      background-color: white;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); 
+      gap: 30px;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr); 
+      }
+    }
+
+    .box {
+      border: 2px solid black;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      gap: 50px;
+    }
+
+    .box img {
+      width: 70px;
+      height: auto;
+    }
+
+    .box p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 480px) {
+      .box {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .box img {
+        width: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">
+      <img src="https://images.prismic.io/frontendpractice/f990db40-ba07-479c-b52c-3b2c6caabc89_domain.png?auto=compress,format" alt="icon1" />
+      <p>Enhance your skills by building real </br>websites selected for their</br> educational value.</p>
+    </div>
+    <div class="box">
+      <img src="https://images.prismic.io/frontendpractice/65eee214-bbfe-4f9e-ad0f-70f7785679be_layout.png?auto=compress,format" alt="icon2" />
+      <p>Test and improve your frontend</br> knowledge through various </br>challenges.</p>
+    </div>
+    <div class="box">
+      <img src="https://images.prismic.io/frontendpractice/8d3c1f70-6ff3-41f0-b9d6-3b46f2899359_pantone.png?auto=compress,format" alt="icon3" />
+      <p>Use the provided color palettes for</br> each project to save time.</p>
+    </div>
+    <div class="box">
+      <img src="https://images.prismic.io/frontendpractice/d6e88860-7347-4d32-acf8-aa1f01db8685_idea.png?auto=compress,format" alt="icon4" />
+      <p>Find helpful, curated resources to</br> tackle challenging elements.</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
